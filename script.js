@@ -1,4 +1,5 @@
-document.getElementById('.form').addEventListener("submit", function(event) {
+document.getElementById('form').addEventListener("submit", function(event) {
+    event.preventDefault();
     let valid = true;
 
     document.querySelectorAll('.error').forEach(error => error.textContent = '');
